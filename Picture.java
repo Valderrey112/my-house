@@ -63,10 +63,19 @@ public class Picture
         sun.moveVertical(150);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(-500);
+        sun.slowMoveVertical(-300);
 
     }
-
+    /**
+     * Hacer que baje el sol
+     */
+    public void setAtardecer()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(1000);
+        }
+    }
     /**
      * Change this picture to black/white display
      */
